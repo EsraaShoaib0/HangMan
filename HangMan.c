@@ -23,6 +23,7 @@ int main() {
 	while(answer == 'y'){
     printf("First player please enter the word to be gueesed by the second player ^_^: \n");
     scanf("%s", word);
+	printf("\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\n\n\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\n\n\n \n \n \n \n \n \n \n\n\n\n\n\n\n\n\n\n\nguess !");
     int wordLength;
     wordLength = strlen(word);
 
@@ -55,11 +56,12 @@ int main() {
 
         if (strcmp(word, guessed) == 0) {
             printf("\nCongratulations! You guessed the word: %s\n", word);
+			NoOfTries = 0;
 			break;
         }
     }
 	if(NoOfTries == MAX_TRIES)
-    printf("\nSorry, you ran out of tries. The word was: %s\n", word);
+    printf("\nYou have lost :( the correct answer is: %s\n", word);
     printf("Do you want to start again! (y/n)");
      scanf(" %c", &answer);
 
